@@ -4,6 +4,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="praktica1.Products"
+		x:CompileBindings="False"
         Title="Products">
 	<StackPanel>
 		<StackPanel
@@ -21,9 +22,42 @@
 		</StackPanel>
 		<StackPanel HorizontalAlignment="Center"
 					VerticalAlignment="Center">
-			<TextBlock>
-				
-			</TextBlock>
+			<ListBox x:Name="TovarBox">
+				<ListBox.ItemTemplate>
+					<DataTemplate>
+						<StackPanel HorizontalAlignment="Center"
+							Width="300">
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="Название:">
+								</TextBlock>
+								<TextBlock
+									Text="{Binding ProductName}"
+									TextWrapping="Wrap"
+									TextAlignment="Center">
+								</TextBlock>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="Описание:">
+								</TextBlock>
+								<TextBlock
+									Text="{Binding ProductCaption}"
+									TextWrapping="Wrap"
+									TextAlignment="Center">
+								</TextBlock>
+							</StackPanel>
+							<StackPanel Orientation="Horizontal">
+								<TextBlock Text="Цена:">
+								</TextBlock>
+								<TextBlock
+									Text="{Binding ProductCost}"
+									TextWrapping="Wrap"
+									TextAlignment="Center">
+								</TextBlock>
+							</StackPanel>
+						</StackPanel>
+					</DataTemplate>
+				</ListBox.ItemTemplate>
+			</ListBox>
 		</StackPanel>
 	</StackPanel>
 </Window>
