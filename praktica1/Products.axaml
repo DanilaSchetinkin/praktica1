@@ -5,5 +5,25 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="praktica1.Products"
         Title="Products">
-  Welcome to Avalonia!
+	<StackPanel>
+		<StackPanel
+			Height="5"></StackPanel>
+		<StackPanel 
+			Spacing="20"
+			HorizontalAlignment="Center"
+					Orientation="Horizontal">
+			<TextBox Width="200"></TextBox>
+			<ComboBox></ComboBox>
+			<ComboBox></ComboBox>
+			<ComboBox></ComboBox>
+		</StackPanel>
+		<StackPanel Height="50">
+		</StackPanel>
+		<StackPanel HorizontalAlignment="Center"
+					VerticalAlignment="Center">
+			<TextBlock>
+				
+			</TextBlock>
+		</StackPanel>
+	</StackPanel>
 </Window>
