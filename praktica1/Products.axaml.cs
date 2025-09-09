@@ -4,6 +4,7 @@ using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
 using praktica1.Models;
 using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 
@@ -14,13 +15,15 @@ public partial class Products : Window
 
     public class Tovars
     {
-        //public Bitmap? ImagePath { get; set; }
+        public Bitmap? ImagePath { get; set; }
         public string ProductName { get; set; }
         public decimal ProductCost { get; set; }
         public string ProductCaption { get; set; }
+
+        public string ColorCost { get; set; }
     }
 
-    private ObservableCollection<Tovars> _tovars;
+    private List<Tovars> _tovars;
 
     public Products()
     {
@@ -32,16 +35,30 @@ public partial class Products : Window
     private void LoadData()
     {
         using var context = new ShchetinkinContext();
-        _tovars = new ObservableCollection<Tovars>(context.Products
+        _tovars = context.Products
             .Select(s => new Tovars
             {
                 //ImagePath = new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + s.ProductImage),
+                ImagePath = new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + s.ProductImage),
                 ProductName = s.ProductName,
                 ProductCost = s.ProductCost,
-                ProductCaption = s.ProductCaption
+                ProductCaption = s.ProductCaption,
+                ColorCost = s.ColorCost
             })
-            .ToList());
+            .ToList();
 
         TovarBox.ItemsSource = _tovars;
+
     }
+
+    //private void SortComboBox_Cost(object sender, EventArgs e)
+    //{
+
+    //    //var item = _tovars.OrderBy(s => s.ProductCost);
+    //    //TovarBox.ItemsSource = item;
+    //    switch (SortComboBoxByCost)
+
+    //}
+
+
 }

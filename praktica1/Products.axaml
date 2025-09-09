@@ -14,9 +14,13 @@
 			HorizontalAlignment="Center"
 					Orientation="Horizontal">
 			<TextBox Width="200"></TextBox>
+			<ComboBox x:Name="SortComboBoxByCost">
+				<ComboBoxItem>Без сортировки</ComboBoxItem>
+				<ComboBoxItem>По Возрастанию</ComboBoxItem>
+				<ComboBoxItem>По убыванию</ComboBoxItem>
+			</ComboBox>
 			<ComboBox></ComboBox>
-			<ComboBox></ComboBox>
-			<ComboBox></ComboBox>
+		
 		</StackPanel>
 		<StackPanel Height="50">
 		</StackPanel>
@@ -26,9 +30,19 @@
 				<ListBox.ItemTemplate>
 					<DataTemplate>
 						<StackPanel HorizontalAlignment="Center"
-							Width="300">
+									Background="{Binding ColorCost}"
+							Width="400"
+									Height="200">
+							<StackPanel>
+								<Image
+									Width="100"
+									Height="100"
+									Source="{Binding ImagePath}">
+									
+								</Image>
+							</StackPanel>
 							<StackPanel Orientation="Horizontal">
-								<TextBlock Text="Название:">
+								<TextBlock Text="Название: ">
 								</TextBlock>
 								<TextBlock
 									Text="{Binding ProductName}"
@@ -37,7 +51,7 @@
 								</TextBlock>
 							</StackPanel>
 							<StackPanel Orientation="Horizontal">
-								<TextBlock Text="Описание:">
+								<TextBlock Text="Описание: ">
 								</TextBlock>
 								<TextBlock
 									Text="{Binding ProductCaption}"
@@ -46,10 +60,10 @@
 								</TextBlock>
 							</StackPanel>
 							<StackPanel Orientation="Horizontal">
-								<TextBlock Text="Цена:">
+								<TextBlock Text="Цена: ">
 								</TextBlock>
 								<TextBlock
-									Text="{Binding ProductCost}"
+									Text="{Binding ProductCost, StringFormat={}{0} ₽}"
 									TextWrapping="Wrap"
 									TextAlignment="Center">
 								</TextBlock>

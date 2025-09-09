@@ -11,6 +11,23 @@ public partial class Product
 
     public int ProductCost { get; set; }
 
+    public string ColorCost
+    {
+        get
+        {
+            string color = "White";
+            if(ProductCost > 20000)
+            {
+                color = "Red";
+            }
+            if(ProductCost < 20000)
+            {
+                color = "Green";
+            }
+            return color;
+        }
+    }
+
     public string? ProductImage { get; set; }
 
     public string? ProductCaption { get; set; }
