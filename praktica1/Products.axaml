@@ -73,7 +73,8 @@
 									TextAlignment="Center">
 								</TextBlock>
 							</StackPanel>
-							<Button Click="Button_Add">
+							<Button Click="Button_Add"
+									Tag="{Binding ProductId}">
 								Добавить
 							</Button>
 						</StackPanel>

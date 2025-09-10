@@ -15,6 +15,7 @@ public partial class Products : Window
 
     public class Tovars
     {
+        public int ProductId { get; set; }
         public Bitmap? ImagePath { get; set; }
         public string ProductName { get; set; }
         public decimal ProductCost { get; set; }
@@ -46,7 +47,8 @@ public partial class Products : Window
                 ProductName = s.ProductName,
                 ProductCost = s.ProductCost,
                 ProductCaption = s.ProductCaption,
-                ColorCost = s.ColorCost
+                ColorCost = s.ColorCost,
+                ProductId = s.ProductId
             })
             .ToList();
 
@@ -116,7 +118,12 @@ public partial class Products : Window
 
     private void Button_Add(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        _tovars
+        int idProduct = (int)(sender as Button).Tag;
+
+        using (ShchetinkinContext context = new ShchetinkinContext())
+        {
+            var product = context.Products.FirstOrDefault(x=>x.ProductId == idProduct);
+        }
 
     }
 
