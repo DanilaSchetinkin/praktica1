@@ -13,13 +13,18 @@
 			Spacing="20"
 			HorizontalAlignment="Center"
 					Orientation="Horizontal">
-			<TextBox Width="200"></TextBox>
+			<TextBox Width="200"
+					 x:Name="SearchBox"></TextBox>
 			<ComboBox x:Name="SortComboBoxByCost">
+				<ComboBoxItem>Без сортировки</ComboBoxItem>
+				<ComboBoxItem>По возрастанию</ComboBoxItem>
+				<ComboBoxItem>По убыванию</ComboBoxItem>
+			</ComboBox>
+			<ComboBox x:Name="SortComboBoxByName">
 				<ComboBoxItem>Без сортировки</ComboBoxItem>
 				<ComboBoxItem>По Возрастанию</ComboBoxItem>
 				<ComboBoxItem>По убыванию</ComboBoxItem>
 			</ComboBox>
-			<ComboBox></ComboBox>
 		
 		</StackPanel>
 		<StackPanel Height="50">
@@ -68,6 +73,9 @@
 									TextAlignment="Center">
 								</TextBlock>
 							</StackPanel>
+							<Button Click="Button_Add">
+								Добавить
+							</Button>
 						</StackPanel>
 					</DataTemplate>
 				</ListBox.ItemTemplate>

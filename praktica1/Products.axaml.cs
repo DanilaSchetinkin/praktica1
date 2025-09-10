@@ -29,6 +29,10 @@ public partial class Products : Window
     {
         InitializeComponent();
         LoadData();
+
+        SortComboBoxByCost.SelectionChanged += SortComboBox_Cost;
+        SortComboBoxByName.SelectionChanged += SortComboBox_Name;
+        SearchBox.TextChanged += SearchBoxChanging;
     }
 
 
@@ -38,7 +42,6 @@ public partial class Products : Window
         _tovars = context.Products
             .Select(s => new Tovars
             {
-                //ImagePath = new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + s.ProductImage),
                 ImagePath = new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + s.ProductImage),
                 ProductName = s.ProductName,
                 ProductCost = s.ProductCost,
@@ -51,14 +54,71 @@ public partial class Products : Window
 
     }
 
-    //private void SortComboBox_Cost(object sender, EventArgs e)
-    //{
+    private void SortComboBox_Cost(object sender, EventArgs e)
+    {
 
-    //    //var item = _tovars.OrderBy(s => s.ProductCost);
-    //    //TovarBox.ItemsSource = item;
-    //    switch (SortComboBoxByCost)
+        var sorted = _tovars.ToList();
 
-    //}
+        switch (SortComboBoxByCost.SelectedIndex)
+        {
+            case 0:
+                sorted = _tovars.ToList();
+                break;
+            case 1:
+                sorted = _tovars.OrderBy(s => s.ProductCost).ToList();
+                break;
+            case 2:
+                sorted = _tovars.OrderByDescending(s => s.ProductCost).ToList();
+                break;
+        }
 
+        TovarBox.ItemsSource = sorted;
 
+    }
+
+    private void SortComboBox_Name(object sender, EventArgs e)
+    {
+        var sorted = _tovars.ToList();
+
+        switch (SortComboBoxByName.SelectedIndex)
+        {
+            case 0:
+                sorted = _tovars.ToList();
+                break;
+                case 1:
+                sorted = _tovars.OrderBy(s => s.ProductName).ToList();
+                break;
+                case 2:
+                sorted = _tovars.OrderByDescending(s => s.ProductName).ToList();
+                break;
+        }
+        TovarBox.ItemsSource = sorted;
+    }
+
+    private void SearchBoxChanging(object sender, EventArgs e)
+    {
+        var searchText = SearchBox.Text?.ToLower() ?? string.Empty;
+
+        if (string.IsNullOrEmpty(searchText))
+        {
+            TovarBox.ItemsSource = _tovars;
+        }
+        else
+        {
+            var searchItem = _tovars
+                .Where(x =>
+                (x.ProductName?.ToLower().Contains(searchText) ?? false)
+                )
+                .ToList();
+            TovarBox.ItemsSource = searchItem;
+        }
+    }
+
+    private void Button_Add(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        _tovars
+
+    }
+
+    
 }
