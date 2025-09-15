@@ -2,6 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 using Avalonia.Media.Imaging;
+using Microsoft.EntityFrameworkCore;
 using praktica1.Models;
 using System;
 using System.Collections.Generic;
@@ -24,7 +25,22 @@ public partial class Products : Window
         public string ColorCost { get; set; }
     }
 
+
+    public class Buiers
+    {
+        public int BuiersId { get; set; }
+        public string BuiersLogin {  get; set; }
+
+
+    }
+
+    private List<Buiers> _buiers;
+
     private List<Tovars> _tovars;
+
+    private List<Product> _products = new List<Product>();
+
+    
 
     public Products()
     {
@@ -43,7 +59,7 @@ public partial class Products : Window
         _tovars = context.Products
             .Select(s => new Tovars
             {
-                ImagePath = new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + s.ProductImage),
+                ImagePath = s.ImagePath,
                 ProductName = s.ProductName,
                 ProductCost = s.ProductCost,
                 ProductCaption = s.ProductCaption,
@@ -51,7 +67,13 @@ public partial class Products : Window
                 ProductId = s.ProductId
             })
             .ToList();
+        _buiers = context.Users.Select(s => new Buiers
+        {
+            BuiersId = s.UserId,
+            BuiersLogin = s.UserLogin
+        }).ToList();
 
+        BuiersBox.ItemsSource = _buiers;
         TovarBox.ItemsSource = _tovars;
 
     }
@@ -116,16 +138,26 @@ public partial class Products : Window
         }
     }
 
-    private void Button_Add(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    public void Button_Add(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
         int idProduct = (int)(sender as Button).Tag;
+        int idUser = (int)(sender as Button).Tag;
 
         using (ShchetinkinContext context = new ShchetinkinContext())
         {
             var product = context.Products.FirstOrDefault(x=>x.ProductId == idProduct);
+            _products.Add(product!);
+            var user = context.Users.FirstOrDefault(x=>x.UserId == idUser);
+            
+
         }
 
     }
 
-    
+    private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        korzina korzina = new korzina(_products);
+        korzina.Show();
+        this.Close();
+    }
 }

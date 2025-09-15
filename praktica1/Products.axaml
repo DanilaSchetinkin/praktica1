@@ -25,12 +25,39 @@
 				<ComboBoxItem>По Возрастанию</ComboBoxItem>
 				<ComboBoxItem>По убыванию</ComboBoxItem>
 			</ComboBox>
+		<Button Content="Перейти в корзину" Background="Yellow"
+				HorizontalAlignment="Right"
+			Click="Button_Click_1">
+	
+</Button>
+	
 		
+			
 		</StackPanel>
 		<StackPanel Height="50">
 		</StackPanel>
-		<StackPanel HorizontalAlignment="Center"
-					VerticalAlignment="Center">
+		<StackPanel>
+			<ListBox x:Name="BuiersBox">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel>
+						<TextBlock Text="{Binding BuierId}"
+								   TextWrapping="Wrap"
+					TextAlignment="Center"></TextBlock>
+					</StackPanel>
+				<StackPanel>
+						<TextBlock Text="{Binding BuierLogin}"
+								   TextWrapping="Wrap"
+					TextAlignment="Center"></TextBlock>
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+		</StackPanel>
+		<StackPanel
+			HorizontalAlignment="Center"
+			VerticalAlignment="Center"
+			>
 			<ListBox x:Name="TovarBox">
 				<ListBox.ItemTemplate>
 					<DataTemplate>
@@ -82,5 +109,7 @@
 				</ListBox.ItemTemplate>
 			</ListBox>
 		</StackPanel>
+	
+
 	</StackPanel>
 </Window>

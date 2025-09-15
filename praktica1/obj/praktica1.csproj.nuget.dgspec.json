@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\praktica1.csproj": {}
+    "C:\\Users\\demo\\Source\\Repos\\praktica1\\praktica1\\praktica1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\praktica1.csproj": {
+    "C:\\Users\\demo\\Source\\Repos\\praktica1\\praktica1\\praktica1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\praktica1.csproj",
+        "projectUniqueName": "C:\\Users\\demo\\Source\\Repos\\praktica1\\praktica1\\praktica1.csproj",
         "projectName": "praktica1",
-        "projectPath": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\praktica1.csproj",
+        "projectPath": "C:\\Users\\demo\\Source\\Repos\\praktica1\\praktica1\\praktica1.csproj",
         "packagesPath": "C:\\Users\\demo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\obj\\",
+        "outputPath": "C:\\Users\\demo\\Source\\Repos\\praktica1\\praktica1\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

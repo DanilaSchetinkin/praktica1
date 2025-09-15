@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Avalonia.Media.Imaging;
+using System;
 using System.Collections.Generic;
 
 namespace praktica1.Models;
@@ -29,6 +30,8 @@ public partial class Product
     }
 
     public string? ProductImage { get; set; }
+
+    public Bitmap ImagePath => new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + ProductImage);
 
     public string? ProductCaption { get; set; }
 }

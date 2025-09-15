@@ -1,0 +1,66 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="praktica1.korzina"
+		x:CompileBindings="False"
+        Title="korzina">
+	<StackPanel>
+		<StackPanel Height="10"></StackPanel>
+		<StackPanel HorizontalAlignment="Center">
+			<TextBlock Text="Корзина"></TextBlock>
+		</StackPanel>
+		<StackPanel Height="10"></StackPanel>
+	<StackPanel HorizontalAlignment="Center"
+					VerticalAlignment="Center">
+		<ListBox x:Name="TovarBox">
+			<ListBox.ItemTemplate>
+				<DataTemplate>
+					<StackPanel HorizontalAlignment="Center"
+								Background="{Binding ColorCost}"
+						Width="400"
+								Height="200">
+						<StackPanel>
+							<Image
+								Width="100"
+								Height="100"
+								Source="{Binding ImagePath}">
+
+							</Image>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Text="Название: ">
+							</TextBlock>
+							<TextBlock
+								Text="{Binding ProductName}"
+								TextWrapping="Wrap"
+								TextAlignment="Center">
+							</TextBlock>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Text="Описание: ">
+							</TextBlock>
+							<TextBlock
+								Text="{Binding ProductCaption}"
+								TextWrapping="Wrap"
+								TextAlignment="Center">
+							</TextBlock>
+						</StackPanel>
+						<StackPanel Orientation="Horizontal">
+							<TextBlock Text="Цена: ">
+							</TextBlock>
+							<TextBlock
+								Text="{Binding ProductCost, StringFormat={}{0} ₽}"
+								TextWrapping="Wrap"
+								TextAlignment="Center">
+							</TextBlock>
+						</StackPanel>
+					</StackPanel>
+				</DataTemplate>
+			</ListBox.ItemTemplate>
+		</ListBox>
+	</StackPanel>
+		<Button Click="Order_Add" VerticalAlignment="Bottom" HorizontalAlignment="Center" Content="Создать закакз"></Button>
+	</StackPanel>
+</Window>
