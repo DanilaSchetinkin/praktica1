@@ -26,26 +26,30 @@ public partial class Products : Window
     }
 
 
-    public class Buiers
-    {
-        public int BuiersId { get; set; }
-        public string BuiersLogin {  get; set; }
+    private int _currentUserId;
+    private string _currentUserLogin;
 
-
-    }
-
-    private List<Buiers> _buiers;
+   
 
     private List<Tovars> _tovars;
 
     private List<Product> _products = new List<Product>();
 
-    
-
     public Products()
     {
         InitializeComponent();
+    }
+
+    public Products(int userId, string userLogin)
+    {
+        InitializeComponent();
         LoadData();
+
+        _currentUserId = userId;
+        _currentUserLogin = userLogin;
+
+        userLoginBox.Text = _currentUserLogin;
+        userIdBox.Text = _currentUserId.ToString();
 
         SortComboBoxByCost.SelectionChanged += SortComboBox_Cost;
         SortComboBoxByName.SelectionChanged += SortComboBox_Name;
@@ -67,17 +71,11 @@ public partial class Products : Window
                 ProductId = s.ProductId
             })
             .ToList();
-        _buiers = context.Users.Select(s => new Buiers
-        {
-            BuiersId = s.UserId,
-            BuiersLogin = s.UserLogin
-        }).ToList();
 
-        BuiersBox.ItemsSource = _buiers;
         TovarBox.ItemsSource = _tovars;
 
     }
-
+    
     private void SortComboBox_Cost(object sender, EventArgs e)
     {
 
@@ -156,8 +154,9 @@ public partial class Products : Window
 
     private void Button_Click_1(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
     {
-        korzina korzina = new korzina(_products);
+        korzina korzina = new korzina(_products, _currentUserId, _currentUserLogin);
         korzina.Show();
         this.Close();
     }
+
 }

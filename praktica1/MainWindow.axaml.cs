@@ -24,7 +24,7 @@ namespace praktica1
                  .FirstOrDefault(u => u.UserLogin == login && u.UserPassword == password);
             if (user != null)
             {
-                var Products = new Products();
+                var Products = new Products(user.UserId, user.UserLogin);
                 Products.Show();
                 this.Close();
             }

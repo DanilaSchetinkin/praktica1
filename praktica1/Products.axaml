@@ -8,7 +8,8 @@
         Title="Products">
 	<StackPanel>
 		<StackPanel
-			Height="5"></StackPanel>
+			Height="5">
+		</StackPanel>
 		<StackPanel 
 			Spacing="20"
 			HorizontalAlignment="Center"
@@ -28,31 +29,28 @@
 		<Button Content="Перейти в корзину" Background="Yellow"
 				HorizontalAlignment="Right"
 			Click="Button_Click_1">
-	
-</Button>
-	
+		</Button>
+			<Border BorderThickness="5"
+					BorderBrush="Gray">
+			<StackPanel 
+				
+				Orientation="Vertical" HorizontalAlignment="Center">
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Text="Логин: "></TextBlock>
+					<TextBlock x:Name="userLoginBox"></TextBlock>
+				</StackPanel>
+				
+				<StackPanel Height="10"></StackPanel>
+				<StackPanel Orientation="Horizontal">
+					<TextBlock Text="Id: "></TextBlock>
+					<TextBlock x:Name="userIdBox"></TextBlock>	
+				</StackPanel>
+				
+			</StackPanel>
+			</Border>
+		</StackPanel>
 		
-			
-		</StackPanel>
 		<StackPanel Height="50">
-		</StackPanel>
-		<StackPanel>
-			<ListBox x:Name="BuiersBox">
-			<ListBox.ItemTemplate>
-				<DataTemplate>
-					<StackPanel>
-						<TextBlock Text="{Binding BuierId}"
-								   TextWrapping="Wrap"
-					TextAlignment="Center"></TextBlock>
-					</StackPanel>
-				<StackPanel>
-						<TextBlock Text="{Binding BuierLogin}"
-								   TextWrapping="Wrap"
-					TextAlignment="Center"></TextBlock>
-					</StackPanel>
-				</DataTemplate>
-			</ListBox.ItemTemplate>
-		</ListBox>
 		</StackPanel>
 		<StackPanel
 			HorizontalAlignment="Center"

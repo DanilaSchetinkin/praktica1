@@ -3,36 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\demo\\source\\repos\\praktica1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\products.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\products.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\models\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\models\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\korzina.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\korzina.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\korzina.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
-      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\korzina.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\products.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\products.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\models\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\models\\ordersservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\products.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\products.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\korzina.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\korzina.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\app.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|c:\\users\\demo\\source\\repos\\praktica1\\praktica1\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{CC1F1AAB-5BE5-4CEA-87B9-C1ADEC28BEA2}|praktica1\\praktica1.csproj|solutionrelative:praktica1\\app.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +42,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,71 +50,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "OrdersService.cs",
               "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Models\\OrdersService.cs",
               "RelativeDocumentMoniker": "praktica1\\Models\\OrdersService.cs",
               "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Models\\OrdersService.cs",
               "RelativeToolTip": "praktica1\\Models\\OrdersService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T08:14:48.608Z",
+              "WhenOpened": "2025-09-16T09:49:34.869Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
+              "Title": "App.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\App.axaml.cs",
+              "RelativeDocumentMoniker": "praktica1\\App.axaml.cs",
+              "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\App.axaml.cs",
+              "RelativeToolTip": "praktica1\\App.axaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T07:00:07.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "App.axaml",
+              "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\App.axaml",
+              "RelativeDocumentMoniker": "praktica1\\App.axaml",
+              "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\App.axaml",
+              "RelativeToolTip": "praktica1\\App.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-16T07:32:43.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "MainWindow.axaml",
               "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\MainWindow.axaml",
               "RelativeDocumentMoniker": "praktica1\\MainWindow.axaml",
               "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\MainWindow.axaml",
               "RelativeToolTip": "praktica1\\MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-15T07:50:06.382Z",
+              "WhenOpened": "2025-09-16T07:27:41.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Program.cs",
-              "RelativeDocumentMoniker": "praktica1\\Program.cs",
-              "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Program.cs",
-              "RelativeToolTip": "praktica1\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T07:48:03.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MainWindow.axaml.cs",
-              "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\MainWindow.axaml.cs",
-              "RelativeDocumentMoniker": "praktica1\\MainWindow.axaml.cs",
-              "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\MainWindow.axaml.cs",
-              "RelativeToolTip": "praktica1\\MainWindow.axaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T07:10:42.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "praktica1\\Models\\Product.cs",
-              "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Models\\Product.cs",
-              "RelativeToolTip": "praktica1\\Models\\Product.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAYAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-15T07:11:41.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "Products.axaml",
               "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Products.axaml",
               "RelativeDocumentMoniker": "praktica1\\Products.axaml",
@@ -132,14 +118,14 @@
               "RelativeDocumentMoniker": "praktica1\\korzina.axaml.cs",
               "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\korzina.axaml.cs",
               "RelativeToolTip": "praktica1\\korzina.axaml.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABEAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAwwEUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-15T06:39:17.291Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "korzina.axaml",
               "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\korzina.axaml",
               "RelativeDocumentMoniker": "praktica1\\korzina.axaml",
@@ -147,6 +133,40 @@
               "RelativeToolTip": "praktica1\\korzina.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-09-15T06:38:26.131Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "FloatingWindowState": {
+        "Id": "b6d14570-a601-4130-861f-783562aa0bda",
+        "Display": 1,
+        "X": 302,
+        "Y": 135,
+        "Width": 1422,
+        "Height": 658,
+        "WindowState": 0
+      },
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Products.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Products.axaml.cs",
+              "RelativeDocumentMoniker": "praktica1\\Products.axaml.cs",
+              "ToolTip": "C:\\Users\\demo\\source\\repos\\praktica1\\praktica1\\Products.axaml.cs",
+              "RelativeToolTip": "praktica1\\Products.axaml.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAawJwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-16T07:03:30.101Z",
               "EditorCaption": ""
             }
           ]
