@@ -1,6 +1,7 @@
 using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
+using Microsoft.EntityFrameworkCore;
 using praktica1.Models;
 using System;
 using System.Collections.Generic;
@@ -49,6 +50,7 @@ public partial class korzina : Window
 
         context.Orders.Add(order);  
         context.SaveChanges();
+        var orderRedactionSum = context.Orders.Include(x=>x.OrdersServices).OrderBy(X => X.OrderId).LastOrDefault();
 
         foreach (var item in products) 
         {
@@ -58,7 +60,9 @@ public partial class korzina : Window
                 OrderId = context.Orders.OrderBy(X => X.OrderId).LastOrDefault().OrderId + 1,
                 ProductId = item.ProductId,
             };
-            context.OrdersServices.Add(orderService);
+
+            orderRedactionSum.OrdersServices.Add(orderService);
+            context.Orders.Update(orderRedactionSum);
             context.SaveChanges();
 
         }
@@ -68,7 +72,7 @@ public partial class korzina : Window
 
         int sumcost = context.Products.Select(s => s.ProductCost).Sum();
 
-        var orderRedactionSum = context.Orders.OrderBy(X => X.OrderId).LastOrDefault();
+       
 
         orderRedactionSum.SumCost = sumcost;
         context.Orders.Update(orderRedactionSum);

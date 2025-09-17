@@ -30,6 +30,8 @@
 				HorizontalAlignment="Right"
 			Click="Button_Click_1">
 		</Button>
+			<Button Content="Добавить товар" 
+					x:Name="Tovar_add"/>
 			<Border BorderThickness="5"
 					BorderBrush="Gray">
 			<StackPanel 

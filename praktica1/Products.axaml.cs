@@ -40,7 +40,7 @@ public partial class Products : Window
         InitializeComponent();
     }
 
-    public Products(int userId, string userLogin)
+    public Products(int userId, string userLogin, int? userRoleId)
     {
         InitializeComponent();
         LoadData();
@@ -48,12 +48,22 @@ public partial class Products : Window
         _currentUserId = userId;
         _currentUserLogin = userLogin;
 
+
         userLoginBox.Text = _currentUserLogin;
         userIdBox.Text = _currentUserId.ToString();
 
         SortComboBoxByCost.SelectionChanged += SortComboBox_Cost;
         SortComboBoxByName.SelectionChanged += SortComboBox_Name;
         SearchBox.TextChanged += SearchBoxChanging;
+
+        if (userRoleId != null && userRoleId == 1)
+        {
+            Tovar_add.IsVisible = true;
+        }
+        else
+        {
+            Tovar_add.IsVisible = false;
+        }
     }
 
 
@@ -67,7 +77,7 @@ public partial class Products : Window
                 ProductName = s.ProductName,
                 ProductCost = s.ProductCost,
                 ProductCaption = s.ProductCaption,
-                ColorCost = s.ColorCost,
+                //ColorCost = s.ColorCost,
                 ProductId = s.ProductId
             })
             .ToList();

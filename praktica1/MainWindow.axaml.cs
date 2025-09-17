@@ -22,12 +22,13 @@ namespace praktica1
 
             var user = context.Users
                  .FirstOrDefault(u => u.UserLogin == login && u.UserPassword == password);
-            if (user != null)
-            {
-                var Products = new Products(user.UserId, user.UserLogin);
-                Products.Show();
-                this.Close();
-            }
+
+            var Products = new Products(user.UserId, user.UserLogin, user.RoleId);
+            Products.Show();
+            this.Close();
+
+           
+
 
         }
 

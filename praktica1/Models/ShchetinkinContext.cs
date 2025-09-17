@@ -27,11 +27,13 @@ public partial class ShchetinkinContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see https://go.microsoft.com/fwlink/?LinkId=723263.
-        => optionsBuilder.UseNpgsql("Host=79.174.88.58;Port=16639;Database=Shchetinkin;Username=Shchetinkin;Password=Shchetinkin123.");
+        => optionsBuilder.UseNpgsql("Host=79.174.88.58; Database=Shchetinkin; Username=Shchetinkin; Password=Shchetinkin123.; Port=16639");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.UseCollation("en_US.UTF-8");
+        modelBuilder
+            .UseCollation("en_US.UTF-8")
+            .HasPostgresExtension("pg_stat_statements");
 
         modelBuilder.Entity<Order>(entity =>
         {
@@ -65,6 +67,16 @@ public partial class ShchetinkinContext : DbContext
                 .HasColumnName("orders_service_id");
             entity.Property(e => e.OrderId).HasColumnName("order_id");
             entity.Property(e => e.ProductId).HasColumnName("product_id");
+
+            entity.HasOne(d => d.Order).WithMany(p => p.OrdersServices)
+                .HasForeignKey(d => d.OrderId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("orders_service_order_fk");
+
+            entity.HasOne(d => d.Product).WithMany(p => p.OrdersServices)
+                .HasForeignKey(d => d.ProductId)
+                .OnDelete(DeleteBehavior.ClientSetNull)
+                .HasConstraintName("orders_service_products_fk");
         });
 
         modelBuilder.Entity<Product>(entity =>

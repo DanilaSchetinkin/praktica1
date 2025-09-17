@@ -1,4 +1,5 @@
-﻿using Avalonia.Media.Imaging;
+﻿using Avalonia.Controls;
+using Avalonia.Media.Imaging;
 using System;
 using System.Collections.Generic;
 
@@ -12,26 +13,11 @@ public partial class Product
 
     public int ProductCost { get; set; }
 
-    public string ColorCost
-    {
-        get
-        {
-            string color = "White";
-            if(ProductCost > 20000)
-            {
-                color = "Red";
-            }
-            if(ProductCost < 20000)
-            {
-                color = "Green";
-            }
-            return color;
-        }
-    }
-
     public string? ProductImage { get; set; }
 
     public Bitmap ImagePath => new Bitmap(AppDomain.CurrentDomain.BaseDirectory + "/" + ProductImage);
 
     public string? ProductCaption { get; set; }
+
+    public virtual ICollection<OrdersService> OrdersServices { get; set; } = new List<OrdersService>();
 }

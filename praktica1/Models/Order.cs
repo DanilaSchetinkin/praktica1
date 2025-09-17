@@ -18,4 +18,6 @@ public partial class Order
     public int? SumCost { get; set; }
 
     public int? UserId { get; set; }
+
+    public virtual ICollection<OrdersService> OrdersServices { get; set; } = new List<OrdersService>();
 }
