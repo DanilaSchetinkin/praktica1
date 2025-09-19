@@ -169,4 +169,10 @@ public partial class Products : Window
         this.Close();
     }
 
+    private void Button_AddProduct(object? sender, Avalonia.Interactivity.RoutedEventArgs e)
+    {
+        AdminWindow adminWindow = new AdminWindow();
+        adminWindow.Show();
+       
+    }
 }

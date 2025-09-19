@@ -6,5 +6,41 @@
         x:Class="praktica1.AdminWindow"
 		x:CompileBindings="False"
         Title="AdminWindow">
-  Welcome to Avalonia!
+	<StackPanel Width="400">
+		<StackPanel Height="10"></StackPanel>
+		<StackPanel>
+			<TextBlock Text="Название"></TextBlock>
+		</StackPanel>
+		<StackPanel Height="5"></StackPanel>
+		<StackPanel>
+			<TextBox x:Name="ProductName"></TextBox>
+		</StackPanel>
+		<StackPanel Height="5"></StackPanel>
+		<TextBlock Text="Цена"></TextBlock>
+		<StackPanel Height="5"></StackPanel>
+		<StackPanel>
+			<TextBox></TextBox>
+		</StackPanel>
+		<StackPanel Height="5"></StackPanel>
+		<StackPanel>
+		<TextBlock Text="Описание"></TextBlock>
+		</StackPanel>
+		<StackPanel Height="5"></StackPanel>
+		<StackPanel>
+			<TextBox></TextBox>
+		</StackPanel>
+		<StackPanel Height="5"></StackPanel>
+		<Button Height="35" Width="200" Content="Добавление товара"></Button>
+		
+		<Button Height="35" Width="200" Content="Выбор фото"
+				Margin="10"
+				Click="Button_Click"></Button>
+
+		<Image Margin="10"
+			   Height="150"
+			   Width="150"
+			   Name="MainImage">
+			
+		</Image>
+	</StackPanel>
 </Window>
