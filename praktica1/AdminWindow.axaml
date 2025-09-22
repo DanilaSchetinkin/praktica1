@@ -19,7 +19,7 @@
 		<TextBlock Text="Цена"></TextBlock>
 		<StackPanel Height="5"></StackPanel>
 		<StackPanel>
-			<TextBox></TextBox>
+			<TextBox x:Name="ProductCost"></TextBox>
 		</StackPanel>
 		<StackPanel Height="5"></StackPanel>
 		<StackPanel>
@@ -27,10 +27,10 @@
 		</StackPanel>
 		<StackPanel Height="5"></StackPanel>
 		<StackPanel>
-			<TextBox></TextBox>
+			<TextBox x:Name="ProductCaption"></TextBox>
 		</StackPanel>
 		<StackPanel Height="5"></StackPanel>
-		<Button Height="35" Width="200" Content="Добавление товара"></Button>
+		<Button Height="35" Width="200" Click="Product_Add" Content="Добавление товара"></Button>
 		
 		<Button Height="35" Width="200" Content="Выбор фото"
 				Margin="10"
